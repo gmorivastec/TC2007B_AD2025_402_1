@@ -46,3 +46,16 @@ export function Doggy(props: any) {
         </View>
     );
 }
+
+export function DoggyRow(props: any) {
+
+    return (
+        <View>
+            <Text>Me llamo: {props.nombre}</Text>
+            <Image 
+                source={{uri: props.uri}}
+                style={{width : 100, height : 100}}
+            />
+        </View>
+    );
+}
